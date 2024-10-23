@@ -19,3 +19,7 @@ jobs:
 
         env:
           MY_VARIABLE: myvar_123
+
+      - name: Display secret variable
+        run: |
+          echo "The secret variable is: ${{ secrets.MY_SECRET_VAR }}"
